@@ -51,7 +51,9 @@
     color: #FFF;
   }
   .editCamera{
-    width: 100%;
+    /* width: 100%; */
+    width: 325px;
+    height: 372.13px;
   }
   .permitToggle{
     width: 80%;

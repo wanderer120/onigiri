@@ -34,15 +34,16 @@ class EditCamera extends React.Component {
 }
 
 const EditCameraComponent = ({input:{onChange,value},meta:{touch,error},values})=>{
-  console.log("EditCamera:"+globalVar.cameraPic);
+  console.log("EditCamera:");
+  console.log(globalVar.cameraPic);
   const photoRef = useRef();
   useEffect(() => {
     if (photoRef.current) {
       const canvas = photoRef.current.getContext('2d')
       // do something here with the canvas
       const img = new Image();
-      // img.width = window.innerWidth;
-      img. height = 450;
+      img.width = 325;
+      img.height = 372.13;
       img.onload = function() {
         canvas.drawImage(img, 0, 0);
       };
@@ -53,7 +54,8 @@ const EditCameraComponent = ({input:{onChange,value},meta:{touch,error},values})
   
   // img.src = value;
   return (
-    <canvas className="editCamera" height={450} ref={photoRef}></canvas>
+    // <canvas className="editCamera" ref={photoRef}></canvas>
+    <img src={globalVar.cameraPic} />
     
   );
 }
