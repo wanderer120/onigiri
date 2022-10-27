@@ -80,7 +80,7 @@ const App = () => {
       {!isVenueValidated&&(
         <div>Loading...</div>
       )}
-      <div>version:27.10.2022.5</div>
+      <div>version:27.10.2022.6</div>
     </Styles>
   </MuiThemeProvider>
 )}
