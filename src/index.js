@@ -80,6 +80,7 @@ const App = () => {
       {!isVenueValidated&&(
         <div>Loading...</div>
       )}
+      <div>version:0.0.1</div>
     </Styles>
   </MuiThemeProvider>
 )}
