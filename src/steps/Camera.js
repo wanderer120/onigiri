@@ -101,7 +101,7 @@ const CameraComponent = function Camera({input:{onChange,value},meta:{touch,erro
 
   return (
     <div className="camera">
-      <video ref={videoRef}></video>
+      <video ref={videoRef} autoplay></video>
       <button className="cameraBtn" onClick={takePhoto}>Take a picture</button>
       <canvas ref={photoRef}></canvas>
     </div>
