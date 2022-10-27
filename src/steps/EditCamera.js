@@ -41,6 +41,8 @@ const EditCameraComponent = ({input:{onChange,value},meta:{touch,error},values})
       const canvas = photoRef.current.getContext('2d')
       // do something here with the canvas
       const img = new Image();
+      img.width = window.innerWidth;
+      img. height = 500;
       img.onload = function() {
         canvas.drawImage(img, 0, 0);
       };
@@ -50,6 +52,8 @@ const EditCameraComponent = ({input:{onChange,value},meta:{touch,error},values})
 
   
   // img.src = value;
-  return (<canvas className="editCamera" height={500} ref={photoRef}></canvas>);
+  return (
+    <canvas className="editCamera" height={500} ref={photoRef}></canvas>
+  );
 }
 export default EditCamera;
