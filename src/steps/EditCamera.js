@@ -50,6 +50,6 @@ const EditCameraComponent = ({input:{onChange,value},meta:{touch,error},values})
 
   
   // img.src = value;
-  return (<canvas className="editCamera" width={350} height={500} ref={photoRef}></canvas>);
+  return (<canvas className="editCamera" height={500} ref={photoRef}></canvas>);
 }
 export default EditCamera;

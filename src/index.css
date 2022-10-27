@@ -49,14 +49,16 @@
     background-position: 0%;
     background-size: 200%;
     color: #FFF;
-    font-size: 24px;
-    font-weight: 700;
-    transition: 0.4s;
-    cursor: pointer;
   }
   .editCamera{
-    align-content: center;
+    width: 100%;
   }
   .permitToggle{
     width: 80%;
+  }
+  .canvasCamera{
+    display: none;
+  }
+  .videoCamera{
+    width: 100%;
   }

@@ -36,7 +36,7 @@ const CameraComponent = function Camera({input:{onChange,value},meta:{touch,erro
 
   const getVideo = ()=>{
       navigator.mediaDevices
-        .getUserMedia({ video: { facingMode: "user",width: 350, height: 500  }, audio: false })
+        .getUserMedia({ video: { facingMode: "user",width: window.innerWidth, height: window.innerWidth*2  }, audio: false })
         .then(function(stream) {
           let video = videoRef.current;
           video.srcObject = stream;
@@ -101,9 +101,9 @@ const CameraComponent = function Camera({input:{onChange,value},meta:{touch,erro
 
   return (
     <div className="camera">
-      <video ref={videoRef} autoplay></video>
+      <video className="videoCamera" autoplay="true" playsinline ref={videoRef}></video>
       <button className="cameraBtn" onClick={takePhoto}>Take a picture</button>
-      <canvas ref={photoRef}></canvas>
+      <canvas className="canvasCamera" ref={photoRef}></canvas>
     </div>
   );
 }
