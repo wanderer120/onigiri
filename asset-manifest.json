@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/onigiri/static/css/main.c79d3b97.css",
+    "main.js": "/onigiri/static/js/main.2ad91854.js",
+    "index.html": "/onigiri/index.html",
+    "main.c79d3b97.css.map": "/onigiri/static/css/main.c79d3b97.css.map",
+    "main.2ad91854.js.map": "/onigiri/static/js/main.2ad91854.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c79d3b97.css",
+    "static/js/main.2ad91854.js"
+  ]
+}
